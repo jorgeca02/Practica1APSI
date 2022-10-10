@@ -5,9 +5,9 @@ const transform:number[] = arr.flat(Number.MAX_VALUE).map((value:any) => {
            })
 const result=transform.map((value:number,index:number,array) => {
     let a=1;
-    transform.forEach((elem:number,indice:number)=>
+    transform.forEach((elem:number,forIndex:number)=>
     {
-        if(indice!=index)a=transform[indice]*a
+        if(forIndex!=index)a=transform[forIndex]*a
     })
     return a
 })
